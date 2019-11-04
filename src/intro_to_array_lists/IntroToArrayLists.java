@@ -35,7 +35,7 @@ public class IntroToArrayLists {
 		}
 		//7. Print only the Strings that have the letter 'e' in them.
 		for(int i = 0; i <word.size(); i++){
-			if(word.contains('e')){
+			if((word.get(i)).contains("e")){
 				System.out.println(word.get(i));
 			}
 		}
