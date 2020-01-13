@@ -1,11 +1,9 @@
 package intro_to_array_lists;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
-import java.util.EventObject;
+
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -56,6 +54,9 @@ public class GuestBook extends MouseAdapter{
 		if((JButton)e.getSource() == one){
 			String newname = JOptionPane.showInputDialog(null, "Enter a name");
 			Narray.add(newname);
+		}
+		if((JButton)e.getSource() == two){
+			JOptionPane.showMessageDialog(null, Narray);
 		}
 	}
 
